@@ -7,8 +7,7 @@ services:
     environment:
       MYSQL_DATABASE: 'fpso_db'
       MYSQL_PASSWORD: 'password'
-      MYSQL_ROOT_PASSWORD: 'password'
-      
+      MYSQL_ROOT_PASSWORD: 'password'      
     healthcheck:
             test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
             timeout: 20s
