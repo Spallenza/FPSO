@@ -7,13 +7,13 @@ docker-compose up -d --build
 
 2)
 ```
-docker-compose run web python manage.py makemigrations
+docker-compose run web python manage.py makemigrations api
 docker-compose run web python manage.py migrate
 ```
 OR
 ```
 docker exec -it web bash 
-python manage.py makemigrations
+python manage.py makemigrations api
 python manage.py migrate
 ```
 
